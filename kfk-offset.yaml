@@ -1,0 +1,80 @@
+---
+
+offsetReset:
+  brokers:
+    - "kafka01.local:9092"
+    - "kafka02.local:9092"
+    - "kafka03.local:9092"
+  consumers:
+    from: propertest-cg
+    to:
+     # - cg: propertest-cg1
+     #   topic: propertest3
+     # - cg: propertest-cg2
+     #   topic: propertest2
+     # - cg: propertest-cg111
+     #   topic: propertest1
+      - cg: propertest-cg1a11
+        topic: propertest
+
+lag:
+  brokers:
+    - "kafka01.local:9092"
+    - "kafka02.local:9092"
+    - "kafka03.local:9092"
+  groups1:
+    - cg: propertest-cg
+      topic: propertest
+    - cg: propertest-cg
+      topic: propertest2
+    - cg: propertest-cg
+      topic: propertest1
+    - cg: propertest-cg
+      topic: propertest
+  groups: 
+    #- cg: propertest-cg1
+    #  topic: propertest3
+    #- cg: propertest-cg2
+    #  topic: propertest2
+    #- cg: propertest-cg111
+    #  topic: propertest1
+    - cg: propertest-cg1a11
+      topic: propertest
+
+    
+
+
+#    - cg: propertest-cg2
+#      topic: propertest2
+#    - cg: propertest-cg
+#      topic: propertest3
+#    - cg: propertest-cg3
+#      topic: propertest4
+#    - cg: propertest-cg1a11
+#      topic: propertest
+#    - cg: propertest-cg111
+#      topic: propertest1
+#    - cg: propertest-cg211
+#      topic: propertest2
+#    - cg: propertest-cg11
+#      topic: propertest3
+#    - cg: propertest-cg311
+#      topic: propertest4
+
+cg: 
+  brokers:
+    - "kafka01.local:9092"
+    - "kafka02.local:9092"
+    - "kafka03.local:9092"
+  groups:
+    - cg: propertest-cg1a11aa
+      topic: propertest
+    - cg: propertest-cg111a
+      topic: propertest1
+    - cg: propertest-cg211a
+      topic: propertest2
+    - cg: propertest-cg11a
+      topic: propertest3
+    - cg: propertest-cg311a
+      topic: propertest4
+    #- cg: propertest-cgroup
