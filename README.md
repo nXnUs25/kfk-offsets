@@ -155,7 +155,7 @@ TOTAL LAG:                                                                      
 
 
 ❯ ./kfkgo lag -g propertest-cg -t propertest
-Using config file: /Users/nonus25/go/src/github.com/nXnUs25/kfk-offsets/kfk-offset.yaml
+Using config file: ~/kfk-offsets/kfk-offset.yaml
 GROUP                                    TOPIC                                    PARTITION       CURRENT-OFFSET  LOG-END-OFFSET  LAG
 propertest-cg                            propertest                               0               179             180             1
 propertest-cg                            propertest                               1               162             165             3
@@ -197,7 +197,7 @@ TOTAL LAG:                                                                      
 
 ```shell
 ❯ ./kfkgo lag -g propertest-cg -t propertest
-Using config file: /Users/nonus25/go/src/github.com/nXnUs25/kfk-offsets/kfk-offset.yaml
+Using config file: ~/kfk-offsets/kfk-offset.yaml
 GROUP                                    TOPIC                                    PARTITION       CURRENT-OFFSET  LOG-END-OFFSET  LAG
 propertest-cg                            propertest                               0               179             183             4
 propertest-cg                            propertest                               1               162             165             3
