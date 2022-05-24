@@ -173,7 +173,10 @@ TOTAL LAG:                                                                      
 ```
 
 We have same offsets … 
-Now to simulate the process we will produce messages to topic and keep consuming on one of the consumer group propertest-cg1a11 we will produce 5 messages and consume them all on that consumer group which will give us info that we consumed 
+Now to simulate the process we will produce messages to topic and keep consuming on one of the 
+consumer group `propertest-cg1a11` we will produce 5 messages and consume them all on that consumer group 
+which will give us info that we consumed 
+
 `^CProcessed a total of 33 messages 28 + 5`
 
 ```shell
